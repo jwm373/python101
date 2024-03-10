@@ -1,7 +1,9 @@
 word = input('enter a word: ')
+list = list(word)
 
 for i in range(0,len(word)):
     if word[i] in ['s','S']:
-        new_word = word[:i] + '' + word[i+1:]
-        print(new_word)
-            
+        list[i] = ''
+        new_word = ''.join(list)
+        
+print(new_word)
